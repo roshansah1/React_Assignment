@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+    color: #FF6663;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 2rem;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+.card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.color{
+  height: 180px;
+  width: 150px;
+  background-color: #FF6663;
+  border-radius: 5px;
+}
+
+p{
+    color: #FF6663;
+}
+
+.text{
+    padding: 0.6rem 0 0.6rem 1rem;
+}
+
+@media screen and (max-width:1000px){
+  .content{
+    width: 80%;
+  }
+}
