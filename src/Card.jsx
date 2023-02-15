@@ -19,9 +19,16 @@ const Card = () => {
 
      setTimeout(change, 1000)
 
+    let body = document.getElementById('main_div')
+
+     const bgChange = () => {
+        body.style.backgroundColor = "#fff"
+     }
+
+
     return(
         <>
-        <div className="main_div">
+        <div className="main_div" id="main_div" onMouseDown={bgChange}>
         <h1 style={{color: color}}> Color Picker </h1>
         <div className="content">
         {Colordata.map((val) => {
@@ -31,6 +38,7 @@ const Card = () => {
                name={val.name} 
                />
         })}
+        <span> Copied to clipboard! </span>
         </div>
         </div>
         </>
